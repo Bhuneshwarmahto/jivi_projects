@@ -1,0 +1,93 @@
+Myname is Bhuneshwar Mahto
+
+Question?
+
+1.For a given String  Ex. your full name, count the occurrence of each character
+Output format: 
+a-2
+b-3
+C-1 etc. Write python code for this.
+
+Answar
+string = input('Enter the occurrence number:')
+values ={'a', 'b', 'c', 'A','B','C'}
+d={}
+for i in string:
+    d [i]= d.get(i,0)
+
+for k,v in d.items():
+
+print('{} occurrence{}time.format(k,v))
+
+
+
+2.write a python code to print sum of  prime numbers upto 19.
+
+list =[]
+for i in range(0,19):
+    for j in range(2,i):
+        if i % j==0:
+            break
+  
+   else:
+       list.append(i)
+print(list)
+
+
+
+3.Write a login function in robot framework for given credential .Given an excel credential.xls with data: username- ABC
+password-XYZ
+Fetch credentials from excel to perform login .
+
+
+
+4.In robot framework, if we need to perform some action if some test failed.which keyword should be used in this case?
+
+we have used 4 keyword same test failed in robot framework like,
+
+Action keyword 
+Configration keyword
+Control flow keyword
+Utilities keyword
+
+
+5.Write test cases and create test plan doc for Payment via UPI
+
+we write test cases,scenario and create test plan doc for payment,
+
+Verify the payment successful with valid details check
+Verify the payment failed with invalid details check
+Verify the confirmation payment after display successful payment or not
+We have used different different payment method like, debit card, credit card and Net banking,
+Card number,
+CVV number,
+Card Expire date,
+
+6. Explain How does selenium Webdriver work ?
+
+Selenium WebDriver is a web framework that permits you to execute cross-browser tests.
+likes example,
+
+from selenium import webdriver
+
+
+driver = webdriver.Chrome()                # open the chrome browser
+driver.get('url')                          # open the web application
+driver.implicitly_wait(5)                  # wait for elemant on the page also defloud waitting time
+
+
+7.Open Flipkart.com, from Best mobile section in home page write Generic xpath for 4th mobile in the list
+
+from selenium import webdriver
+
+driver = webdriver.chrome()
+driver.get('url of flipkart')
+driver.implicitly_wait(5)
+driver.find-element_by_xpath('').send_keys('4th mobile')
+search_list = driver.find_element_by_xpath(' ')
+
+for search in search_list:
+    if search.text=='4th mobile':
+       search.click
+       break
+
