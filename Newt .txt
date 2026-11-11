@@ -1,0 +1,42 @@
+class college:
+    def show(self):
+        print('this is very good school')
+
+
+class child1(college):
+    def display(self):
+        print('this is very good school')
+
+
+class child2(college):
+    def printdetails(self):
+        print('this is very good college')
+
+
+obj = child1()
+obj.display()
+obj.show()
+
+obj = child2()
+obj.printdetails()
+
+
+class parent1:
+    def show(self):
+        print('this is parent1')
+
+
+class parent2:
+    def printdetails(self):
+        print('this is parent2')
+
+
+class IITin(parent1,parent2):
+    def display(self):
+        print('welcome to IIT Mumbai')
+
+
+obj = IITin()
+obj.show()
+obj.printdetails()
+obj.display()
